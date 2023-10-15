@@ -23,14 +23,14 @@
       <meta name="csrf-token" content="DV1HfO65GgGZf2m7KQrbFiRpVz1Q0Ryr5cQZtpKo">
       <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&amp;subset=all'
          rel='stylesheet' type='text/css'>
-      <link href="css/socicon.css" rel="stylesheet" type="text/css"/>
-      <link href="css/bootstrap-social.css" rel="stylesheet"
+      <link href="{{asset('frontend/css/socicon.css')}}" rel="stylesheet" type="text/css"/>
+      <link href="{{asset('frontend/css/bootstrap-social.css')}}" rel="stylesheet"
          type="text/css"/>
-      <link href="css/font-awesome.min.css" rel="stylesheet"
+      <link href="{{asset('frontend/css/font-awesome.min.css')}}" rel="stylesheet"
          type="text/css"/>
-      <link href="css/simple-line-icons.min.css" rel="stylesheet"
+      <link href="{{asset('frontend/css/simple-line-icons.min.css')}}" rel="stylesheet"
          type="text/css"/>
-      <link href="css/animate.min.css" rel="stylesheet" type="text/css"/>
+      <link href="{{asset('frontend/css/animate.min.css')}}" rel="stylesheet" type="text/css"/>
      <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <!-- END GLOBAL MANDATORY STYLES -->
@@ -60,14 +60,14 @@
       <link rel="stylesheet" href="{{asset('frontend/css/owl.theme.css')}}">
       <link rel="stylesheet" href="{{asset('frontend/css/owl.transitions.css')}}">
      
-      <link href="{{asset('frontend/css/style.css?v=165028560171931')}}" rel="stylesheet" type="text/css"/>
+      <link href="{{asset('frontend/css/style.css')}}" rel="stylesheet" type="text/css"/>
       <!-- END THEME STYLES -->
-       <script src="js/jquery-2.1.0.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/owl.carousel.min.js"></script>
-      <script src="js/owl-carousel/slider.js"></script>
-      <script src="js/jquery-cookie/jquery.cookie.js"></script>
-      <script src="js/jquery-migrate.min.js" type="text/javascript"></script>
+       <script src="{{asset('frontend/js/jquery-2.1.0.min.js')}}"></script>
+      <script src="{{asset('frontend/js/bootstrap.min.js')}}"></script>
+      <script src="{{asset('frontend/js/owl.carousel.min.js')}}"></script>
+      <script src="{{asset('frontend/js/owl-carousel/slider.js')}}"></script>
+      <script src="{{asset('frontend/js/jquery-cookie/jquery.cookie.js')}}"></script>
+      <script src="{{asset('frontend/js/jquery-migrate.min.js')}}" type="text/javascript"></script>
      <!--  <script src="js/bootstrap.min.js" type="text/javascript"></script> -->
       <style>
          .c-layout-header .c-navbar .c-mega-menu > .nav.navbar-nav > li > .c-link{padding:41px 10px 39px 10px}
@@ -1315,26 +1315,26 @@
       <!--[if lt IE 9]>
       <![endif]-->
       
-      <script src="js/jquery.easing.min.js" type="text/javascript"></script>
-      <script src="js/wow.js" type="text/javascript"></script>
-      <script src="js/reveal-animate.js"
+      <script src="{{asset('frontend/js/jquery.easing.min.js')}}" type="text/javascript"></script>
+      <script src="{{asset('frontend/js/wow.js')}}" type="text/javascript"></script>
+      <script src="{{asset('frontend/js/reveal-animate.js')}}"
          type="text/javascript"></script>
       <!-- END: CORE PLUGINS -->
       <!-- BEGIN: LAYOUT PLUGINS -->
-      <script src="js/magnific.js" type="text/javascript"></script>
-      <script src="js/jquery.cubeportfolio.min.js"
+      <script src="{{asset('frontend/js/magnific.js')}}" type="text/javascript"></script>
+      <script src="{{asset('frontend/js/jquery.cubeportfolio.min.js')}}"
          type="text/javascript"></script>
-      <script src="js/jquery.counterup.min.js" type="text/javascript"></script>
-      <script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
-      <script src="js/jquery.fancybox.min.js"></script>
-      <script src="js/jquery.smooth-scroll.js"
+      <script src="{{asset('/frontend/js/jquery.counterup.min.js')}}" type="text/javascript"></script>
+      <script src="{{asset('/frontend/js/jquery.waypoints.min.js')}}" type="text/javascript"></script>
+      <script src="{{asset('frontend/js/jquery.fancybox.min.js')}}"></script>
+      <script src="{{asset('frontend/js/jquery.smooth-scroll.js')}}"
          type="text/javascript"></script>
-      <script src="js/js.cookie.js" type="text/javascript"></script>
+      <script src="{{asset('frontend/js/js.cookie.js')}}" type="text/javascript"></script>
       <!-- END: LAYOUT PLUGINS -->
       <!-- BEGIN: THEME SCRIPTS -->
-      <script src="js/components.js" type="text/javascript"></script>
-      <script src="js/app.js" type="text/javascript"></script>
-      <script src="js/bootbox.min.js" type="text/javascript"></script>
+      <script src="{{asset('frontend/js/components.js')}}" type="text/javascript"></script>
+      <script src="{{asset('frontend/js/app.js')}}" type="text/javascript"></script>
+      <script src="{{asset('frontend/js/bootbox.min.js')}}" type="text/javascript"></script>
       <script>
          $(document).ready(function () {
              App.init(); // init core
@@ -1380,20 +1380,20 @@
          </script>
       <!-- END: THEME SCRIPTS -->
       <!-- BEGIN: PAGE SCRIPTS -->
-      <script src="js/moment.min.js" type="text/javascript"></script>
-      <script src="js/daterangepicker.min.js"
+      <script src="{{asset('frontend/js/moment.min.js')}}" type="text/javascript"></script>
+      <script src="{{asset('frontend/js/daterangepicker.min.js')}}"
          type="text/javascript"></script>
-      <script src="js/bootstrap-datepicker.min.js"
+      <script src="{{asset('frontend/js/bootstrap-datepicker.min.js')}}"
          type="text/javascript"></script>
-      <script src="js/bootstrap-timepicker.min.js"
+      <script src="{{asset('frontend/js/bootstrap-timepicker.min.js')}}"
          type="text/javascript"></script>
-      <script src="js/bootstrap-datetimepicker.min.js"
+      <script src="{{asset('frontend/js/bootstrap-datetimepicker.min.js')}}"
          type="text/javascript"></script>
-      <script src="js/datepicker.js"
+      <script src="{{asset('frontend/js/datepicker.js')}}"
          type="text/javascript"></script>
-      <script src="js/jquery.mask.min.js"
+      <script src="{{asset('frontend/js/jquery.mask.min.js')}}"
          type="text/javascript"></script>
-      <script src="js/common.js" type="text/javascript"></script>
+      <script src="{{asset('frontend/js/common.js')}}" type="text/javascript"></script>
       <script type="text/javascript">
          $('.owl-carousel-dicvu').owlCarousel({
           loop:true,
