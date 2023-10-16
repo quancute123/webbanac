@@ -16,4 +16,10 @@ class IndexController extends Controller
     public function dich_vucon($slug){
         return view('page.sub_service',compact('slug'));
     }
+    public function danhmuc(){
+        return view('page.category');
+    }
+    public function danhmuccon($slug){
+        return view('page.sub_category',compact('slug'));
+    }
 }
