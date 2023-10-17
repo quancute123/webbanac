@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\AdminControllers\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,3 +22,12 @@ Route::get('/danh-muc/{slug}', [IndexController::class,'danhmuccon'] )-> name('d
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+
+
+// Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/admin', [ App\Http\Controllers\AdminControllers\HomeController::class , 'index'] );
