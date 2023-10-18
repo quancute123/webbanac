@@ -9,9 +9,9 @@ class Category extends Model
 {
     use HasFactory;
     public $timestaps = false;
-    protected $table = 'categories';
+    //protected $table = 'categories';
     protected $fillable = [
-        'title','decripstion','image','status','oder_category'
+        'title','description','image','status','order_category'
     ];
     
 }

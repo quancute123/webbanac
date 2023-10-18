@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
-use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\AdminControllers\CategoryController;
 use App\Http\Controllers\AdminControllers\HomeController;
 /*
 |--------------------------------------------------------------------------
@@ -31,10 +31,15 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/admin', [ App\Http\Controllers\AdminControllers\HomeController::class , 'index'] );
+
 
 Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
-// category
-Route::resource('/category', CategoryController::class);
+
+//admin
+Route::get('/admin', [HomeController::class , 'index']) ->name('admin');
+
+//category admin
+Route::resource('/admin/category', CategoryController::class);
+

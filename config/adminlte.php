@@ -343,9 +343,11 @@ return [
             'text'    => 'Quản lý danh mục game',
             'submenu' => [
                 [
-                    'text' => 'Xem danh sách tài khoản',
+                    'text' => 'Thêm danh mục',
                     'shift'   => 'ml-3',
-                    'url'  => 'menu/child1',
+                    //url'  => 'admin.category',
+                    'route' => "category.index",
+                    
                 ],
                 [
                     'text' => 'Xóa tài khoản',
